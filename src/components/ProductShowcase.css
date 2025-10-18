@@ -1,0 +1,113 @@
+.product-showcase {
+  background: var(--color-panel);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.limited-edition {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.limited-edition h2 {
+  font-size: clamp(2rem, 4vw, 2.4rem);
+  color: var(--color-primary-strong);
+  margin: 0 0 10px 0;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+
+.limited-text {
+  font-size: 1rem;
+  color: var(--color-primary);
+  font-style: italic;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.illustration-spotlight h3 {
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
+  color: var(--color-accent);
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.product-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: clamp(24px, 6vw, 40px);
+  align-items: center;
+}
+
+.product-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-placeholder {
+  width: min(100%, 360px);
+  aspect-ratio: 1 / 1;
+  background: var(--color-surface-alt);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-md);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-text);
+  font-size: 16px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.product-description {
+  padding: 0;
+}
+
+.product-description p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--color-text);
+  margin-bottom: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.buy-button {
+  display: inline-block;
+  background: var(--color-primary);
+  color: #ffffff;
+  padding: 14px 28px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 6px;
+  transition: all 0.25s ease;
+  border: 1px solid var(--color-primary);
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 10px 24px rgba(217, 100, 42, 0.25);
+}
+
+.buy-button:hover {
+  background: var(--color-primary-strong);
+  border-color: var(--color-primary-strong);
+  transform: translateY(-2px);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .product-description {
+    text-align: center;
+  }
+
+  .buy-button {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+  }
+}

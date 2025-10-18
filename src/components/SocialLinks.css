@@ -1,0 +1,111 @@
+.social-links {
+  padding: 20px 0 0 0;
+  margin-top: auto;
+  background: transparent;
+}
+
+.social-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 12px 10px;
+  border-radius: 0;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  border: none;
+  font-size: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04), 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.social-icon {
+  font-size: 18px;
+}
+
+.social-name {
+  font-size: 11px;
+}
+
+/* Color variations */
+.social-red {
+  background: rgba(255, 0, 0, 0.1);
+  border-color: rgba(255, 0, 0, 0.32);
+  color: #c00;
+}
+
+.social-red:hover {
+  background: #ff0000;
+  border-color: #ff0000;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(255, 0, 0, 0.35);
+}
+
+.social-pink {
+  background: rgba(255, 0, 128, 0.08);
+  border-color: rgba(255, 0, 128, 0.3);
+  color: #d6006f;
+}
+
+.social-pink:hover {
+  background: #dd2a7b;
+  border-color: #dd2a7b;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(221, 42, 123, 0.35);
+}
+
+.social-teal {
+  background: rgba(0, 242, 234, 0.08);
+  border-color: rgba(0, 242, 234, 0.3);
+  color: #00b8b8;
+}
+
+.social-teal:hover {
+  background: #00f2ea;
+  border-color: #00f2ea;
+  color: #000;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0, 242, 234, 0.35);
+}
+
+.social-blue {
+  background: rgba(29, 155, 240, 0.08);
+  border-color: rgba(29, 155, 240, 0.3);
+  color: #1d9bf0;
+}
+
+.social-blue:hover {
+  background: #1d9bf0;
+  border-color: #1d9bf0;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(29, 155, 240, 0.35);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .social-links {
+    padding: 15px;
+  }
+
+  .social-link {
+    padding: 10px 16px;
+  }
+
+  .social-name {
+    font-size: 12px;
+  }
+
+  .social-icon {
+    font-size: 18px;
+  }
+}

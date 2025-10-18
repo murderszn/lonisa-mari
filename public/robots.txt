@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Block access to sensitive files
+Disallow: /functions/
+Disallow: /firebase-debug.log
+Disallow: /node_modules/
+
+# Allow access to main content
+Allow: /
+Allow: /portfolio
+Allow: /floral
+
+# Sitemap
+Sitemap: https://lonisamari.com/sitemap.xml

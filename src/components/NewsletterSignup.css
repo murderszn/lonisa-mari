@@ -1,0 +1,112 @@
+.newsletter-signup {
+  margin-top: 32px;
+  padding: 32px 24px;
+  background: var(--color-soft-white);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04), 0 4px 16px rgba(0, 0, 0, 0.03);
+}
+
+.newsletter-content {
+  text-align: center;
+}
+
+.newsletter-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-text-dark);
+  margin: 0 0 12px 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.newsletter-description {
+  font-size: 14px;
+  color: var(--color-text);
+  margin: 0 0 6px 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.newsletter-note {
+  font-size: 12px;
+  color: var(--color-text-light);
+  margin: 0 0 20px 0;
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+}
+
+.newsletter-form {
+  width: 100%;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 100%;
+}
+
+.newsletter-input {
+  width: 100%;
+  padding: 14px 16px;
+  border: none;
+  background: var(--color-white);
+  color: var(--color-text);
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04), 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.newsletter-input:focus {
+  box-shadow: 0 4px 12px rgba(217, 119, 68, 0.15), 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.newsletter-input::placeholder {
+  color: var(--color-text-light);
+}
+
+.newsletter-button {
+  width: 100%;
+  padding: 14px 24px;
+  background: var(--color-orange);
+  color: var(--color-white);
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.newsletter-button:hover {
+  background: var(--color-terracotta);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.newsletter-button:active {
+  transform: translateY(0);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .newsletter-signup {
+    margin-top: 24px;
+    padding: 24px 16px;
+  }
+
+  .newsletter-title {
+    font-size: 18px;
+  }
+
+  .newsletter-description {
+    font-size: 13px;
+  }
+
+  .newsletter-input,
+  .newsletter-button {
+    font-size: 13px;
+    padding: 12px 16px;
+  }
+}

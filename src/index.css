@@ -1,0 +1,91 @@
+:root {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  /* Core neutrals */
+  --color-text: #241b16;
+  --color-text-strong: #17100c;
+  --color-text-muted: #5f5149;
+  --color-panel: #ffffff;
+  --color-surface: #f6f1ea;
+  --color-surface-alt: #fbf8f3;
+  --color-border: #d9cdc0;
+  --color-border-subtle: #ece3da;
+
+  /* Brand accents */
+  --color-primary: #c85b1a;
+  --color-primary-strong: #a74712;
+  --color-accent: #eba83d;
+  --color-accent-soft: #f3c36f;
+  --color-deep: #1a1412;
+  --color-terracotta: #b14d1b;
+  --color-soft-white: #fbf8f3;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-text-light: #7c6f68;
+  --color-cream: var(--color-surface);
+  --color-sand: #efe4d6;
+  --color-orange: var(--color-primary);
+  --color-yellow: var(--color-accent);
+  --color-bg-dark: var(--color-deep);
+
+  /* Radii & spacing */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 18px;
+  --container-width: 1120px;
+  --container-padding: clamp(20px, 5vw, 48px);
+
+  /* Depth */
+  --shadow-sm: 0 10px 24px rgba(26, 20, 18, 0.05);
+  --shadow-md: 0 16px 32px rgba(26, 20, 18, 0.08);
+  --shadow-lg: 0 30px 60px rgba(26, 20, 18, 0.12);
+
+  color: var(--color-text);
+  background-color: var(--color-surface);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--color-surface);
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--color-text);
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+  width: 100%;
+}
+
+.section {
+  padding: clamp(48px, 12vw, 96px) 0;
+}
+
+.section:first-child {
+  padding-top: 0;
+}
+
+.surface-card {
+  background-color: var(--color-panel);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-border-subtle);
+}

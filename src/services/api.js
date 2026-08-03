@@ -3,7 +3,7 @@ import { initializeApp } from 'firebase/app';
 
 // Firebase configuration for lonisa-mari project
 const firebaseConfig = {
-  apiKey: "AIzaSyArt8xU4EFhaV45oJ271J5bN7-ba5qWpCs",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY || '',
   authDomain: "lonisa-mari.firebaseapp.com",
   projectId: "lonisa-mari",
   storageBucket: "lonisa-mari.firebasestorage.app",
